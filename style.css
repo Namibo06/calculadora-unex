@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(to bottom, #19102D,#513193);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.container{
+    width: 320px;
+    height: 440px;
+    background-color: #050D21;
+    border-radius: 10px;
+    padding: 40px 15px 30px 15px;
+}
+
+header div#display{
+    background-color: #D9D9D9;
+    width: 98.5%;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: right;
+    padding: 15px 10px;
+    font-size: 21px;
+}
+
+main{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.columns{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transition: 0.4s ease-in;
+}
+
+section.columns button{
+    width: 65px;
+    height: 55px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.4s ease-in;
+}
+
+section.columns button:active{
+    position: relative;
+    top: 1px;
+}
+
+section.columns:nth-child(2) button:last-child{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+section.columns:last-child button{
+    margin-right: 0;
+}
+
+section.columns:last-child button:last-child{
+    height: 115px;
+}
