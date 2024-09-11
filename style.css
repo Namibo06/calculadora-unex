@@ -75,3 +75,9 @@ section.columns:last-child button{
 section.columns:last-child button:last-child{
     height: 115px;
 }
+
+@media screen and (width < 350px){
+    .container{
+        max-width: 95%;
+    }
+}
