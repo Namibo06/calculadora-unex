@@ -76,20 +76,22 @@ document.addEventListener('DOMContentLoaded',() =>{
                     result = (firstNumber / 100) * secondNumber;
                     break;
                 case '/':
-                    if (secondNumber === 0) {
+                    if (firstNumber === 0 || secondNumber === 0) {
                         result = 'Erro: Divisão por zero';
                     } else {
                         result = firstNumber / secondNumber;
                     }
                     break;
                 default:
-                    result = secondNumber;
+                    result = "Erro: Algo de errado na operação";
             }
 
             changeDisplay(result); 
             currentValue = result.toString(); 
             firstNumber = null;
             operation = ""; 
+        }else{
+            changeDisplay("Erro: Precisa de dois números");
         }
     }
 
