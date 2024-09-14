@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded',() =>{
     let result = null; 
 
     function changeDisplay(values) {
-        console.log(values);
         display.innerHTML = values;
     }
 
@@ -43,15 +42,12 @@ document.addEventListener('DOMContentLoaded',() =>{
 
     function defineOperation(chosenOperation) {
         if (currentValue !== '') {
-            console.log("Current é diferente de vazio");
             
             if (result !== null && currentValue === result.toString()) {
-                console.log("result é diferente de null");
                 firstNumber = result;
                 result = null; 
             } else {
                 firstNumber = parseFloat(currentValue);
-                console.log("firstNumber dentro do else " + firstNumber);
             }
     
             operation = chosenOperation;
@@ -90,7 +86,7 @@ document.addEventListener('DOMContentLoaded',() =>{
                     result = secondNumber;
             }
 
-            changeDisplay(result.toFixed(2)); 
+            changeDisplay(result); 
             currentValue = result.toString(); 
             firstNumber = null;
             operation = ""; 
