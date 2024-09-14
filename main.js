@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded',() =>{
                     result = firstNumber * secondNumber;
                     break;
                 case '%':
-                    result = firstNumber % secondNumber;
+                    result = (firstNumber / 100) * secondNumber;
                     break;
                 case '/':
                     if (secondNumber === 0) {
